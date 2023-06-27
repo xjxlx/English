@@ -9,6 +9,10 @@ import com.android.helper.base.title.AppBaseBindingTitleActivity
 class WordMapActivity : AppBaseBindingTitleActivity<ActivityWordMapBinding>() {
 
     override fun initData(savedInstanceState: Bundle?) {
+
+        mBinding.tvItemFrom.setOnClickListener {
+            startActivity(FromActivity::class.java)
+        }
     }
 
     override fun setTitleContent(): String {
