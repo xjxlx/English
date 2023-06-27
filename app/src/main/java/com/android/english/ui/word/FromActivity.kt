@@ -8,8 +8,14 @@ import com.android.helper.base.title.AppBaseBindingTitleActivity
 
 class FromActivity : AppBaseBindingTitleActivity<ActivityFromBinding>() {
 
+    private val content: StringBuffer = StringBuffer().apply {
+        append("from: 从 ... 到... (时间)")
+        append("\r\n")
+        append("the park open from a.m. 8 to p.m 8")
+    }
+
     override fun initData(savedInstanceState: Bundle?) {
-        mBinding.cvContent.content.text = "1232"
+        mBinding.cvContent.content.text = content.toString()
     }
 
     override fun setTitleContent(): String {
