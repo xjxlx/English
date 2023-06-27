@@ -9,9 +9,10 @@ import com.android.helper.base.title.AppBaseBindingTitleActivity
 class FromActivity : AppBaseBindingTitleActivity<ActivityFromBinding>() {
 
     private val content: StringBuffer = StringBuffer().apply {
-        append("from: 从 ... 到... (时间)")
-        append("\r\n")
-        append("the park open from a.m. 8 to p.m 8")
+        append("from: 从 ... 到... (时间)").append("\r\n")
+        append("the park open from 8 a.m.  to 8p.m").append("\r\n")
+        append("com from :出生地、来自某处：").append("hello, everyone. I com from Henan !")
+            .append("\r\n")
     }
 
     override fun initData(savedInstanceState: Bundle?) {
