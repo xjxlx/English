@@ -27,3 +27,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "English"
 include ':app'
+include ':apphelper'
+include ':apphelper2'
