@@ -1,11 +1,22 @@
 package com.android.english
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import com.android.english.databinding.ActivityMainBinding
+import com.android.helper.base.title.AppBaseBindingTitleActivity
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : AppBaseBindingTitleActivity<ActivityMainBinding>() {
+
+    override fun initData(savedInstanceState: Bundle?) {
+
+    }
+
+    override fun setTitleContent(): String {
+        return "主界面"
+    }
+
+    override fun getBinding(inflater: LayoutInflater, container: ViewGroup?): ActivityMainBinding {
+        return ActivityMainBinding.inflate(inflater, container, true)
     }
 }
