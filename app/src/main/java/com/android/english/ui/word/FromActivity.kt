@@ -20,7 +20,7 @@ class FromActivity : AppBaseBindingTitleActivity<ActivityFromBinding>() {
     }
 
     override fun setTitleContent(): String {
-        return "From"
+        return "Words"
     }
 
     override fun getBinding(inflater: LayoutInflater, container: ViewGroup?): ActivityFromBinding {
